@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Mirralise</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+	
+	<header>
+		<div class="logo">
+			<a href="index.html"><img class="graficLogo" src="css/images/logo.png" alt="Logo"></a>
+		</div>
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">HOME</a>
+				<a href="projects.html">PPOJECTS</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="location.html">LOCATION</a>
+				<a id="menu" href="#" class="icon">&#9776</a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<h1>LOCATION</h1>
+		<div id="map"></div>
+	</main>
+
+	<footer>
+		<nav>
+				<a href="index.html">HOME</a>
+				<a href="projects.html">PPOJECTS</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="location.html">LOCATION</a>
+		</nav>
+
+		<div class="logo">
+			<a href="index.html"><img class="graficLogo" src="css/images/logo.png"></a>
+		</div>
+		
+		<div class="social">
+			<a href="#"><img src="css/images/em.png"></a>
+			<a href="#"><img src="css/images/face.png"></a>
+			<a href="#"><img src="css/images/goo.png"></a>
+			<a href="#"><img src="css/images/inst.png"></a>
+			<a href="#"><img src="css/images/pint.png"></a>
+		</div>
+		<p>XcenNoN 2019 г.</p>
+	</footer>
+
+	<script>
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 56.8344699, lng: 60.5911693};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 8, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATUarDGxsV8Re5oJWNTwucO75AnnmxNnI&callback=initMap">
+    </script>
+	
+	<script src="script/script.js"></script>
+</body>
+</html>
+
